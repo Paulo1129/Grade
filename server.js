@@ -16,8 +16,7 @@ app.post('/login', async (req, res) => {
 
     // Read Google Sheets data (replace with your actual spreadsheet ID and range)
     const response = await sheets.spreadsheets.values.get({
-        spreadsheetId: '        spreadsheetId: 'YOUR1DcVzTvNBbLbgsrMQ9nAq9crN1Sw7jyryMSFpuyKfYKI',
-',  // Replace with your actual Google Sheets ID
+        spreadsheetId: 'YOUR1DcVzTvNBbLbgsrMQ9nAq9crN1Sw7jyryMSFpuyKfYKI',// Replace with your actual Google Sheets ID
         range: 'Sheet1!A:D',  // Adjust range as needed (columns for username, password, name, grade)
     });
 
